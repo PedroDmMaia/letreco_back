@@ -10,6 +10,19 @@
 $ npm install
 ```
 
+## CORS
+
+O backend aceita requisições de:
+
+- `http://localhost:4200` (sempre, para desenvolvimento)
+- Origens definidas nas variáveis de ambiente **`CORS_ORIGIN`** ou **`FRONTEND_URL`** (ex.: URL do front na Vercel)
+
+No **Render** (ou onde o back estiver em produção), configure:
+
+- **CORS_ORIGIN** = `https://seu-app.vercel.app`  
+  Ou várias origens separadas por vírgula:  
+  `https://seu-app.vercel.app,https://seu-app-git-main.vercel.app`
+
 ## Running the app
 
 ```bash
